@@ -1,3 +1,127 @@
-body {
-  background-color: peachpuff;
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Lato', sans-serif;
 }
+
+html {
+  background: url('./bcgr.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  min-height:70vh;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  
+}
+
+body{
+  margin-top: 30px;
+}
+
+.quiz-container {
+  background: rgba(255, 255, 255, 0.6);
+  box-shadow: 0 0 0 10px rgba(43, 6, 6, 0.1);
+  padding: 20px;
+  border-radius: 8px;
+  min-height: 150px;
+}
+
+.quiz-container.wrong {
+  box-shadow: 0 0 0 10px #ff6666;
+}
+
+.quiz-container.correct {
+  box-shadow: 0 0 0 10px  #2eb82e;
+}
+
+/* Buttons */
+
+.btn-grid {
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  gap: 10px;
+  margin: 20px;
+}
+
+.btn {
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-size: 20px;
+  border: 2px solid rgb(20, 3, 252);
+}
+
+.btn:hover {
+  box-shadow: 1px 3px 3px rgb(153, 152, 152);
+}
+
+.btn.wrong {
+  background-color: #ff6666;
+}
+
+.btn.correct {
+  background-color: #2eb82e;
+}
+
+
+.start-btn, .next-btn {
+  font-size: 1.5rem;
+  font-weight: bold;
+  padding: 10px 20px;
+  background-color: rgb(197, 194, 194);
+}
+
+/* Controls buttons */
+.controls {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+/* Score and title */
+h1 {
+  margin-bottom: 30px;
+  font-size: 3.5em;
+}
+
+#score-container {
+  display: grid;
+  font-size: 1.5em;
+  grid-template-columns: auto auto;
+}
+
+#score-question {
+  text-align: left;
+  padding: 15px;
+}
+
+#score-answers {
+  text-align: right;
+  padding: 15px;
+}
+
+#question {
+  font-size: 25px;
+}
+
+.hide {
+  display: none;
+}
+
+/* responsive design */
+
+@media only screen and (max-width: 1350px) {
+  html {
+    background-size: auto;
+  }
+}
+
+
+
+
+
+
+

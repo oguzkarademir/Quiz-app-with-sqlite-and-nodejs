@@ -3,14 +3,44 @@
 
 <head>
   <meta charset="utf-8" />
-  <title>courses web-app</title>
-
+  <title>Quiz-app</title>
   <link rel="stylesheet" href="./style.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Lato:ital@1&display=swap" rel="stylesheet">
 
 </head>
 
 <body>
   <div id='root'></div>
+
+  <h1>Quiz about tracks and composers</h1>
+  <div class="quiz-container">
+    
+    
+    <!-- question and answers container -->
+    <div id="question-container" class='hide'>
+      <!-- score field -->
+      <div id="score-container">
+        <div id="score-question" class="score">Question 1 from 10</div>
+        <div id="score-answers" class="score">0</div>
+      </div>
+
+      <div id="question">Question</div>
+      <div id="answer-buttons" class="btn-grid">
+        <button id="answ-1" class="btn">Answer 1</button>
+        <button id="answ-2" class="btn">Answer 2</button>
+        <button id="answ-3" class="btn">Answer 3</button>
+        <button id="answ-4" class="btn">Answer 4</button>
+      </div>
+    </div>
+
+    <!-- controls buttons -->
+    <div class="controls">
+      <button id="start-btn" class="start-btn btn">Start</button>
+      <button id="next-btn" class="next-btn btn hide">Next question</button>
+    </div>
+  </div>
+
 
   <script src='./app/init.js'></script>
 </body>
