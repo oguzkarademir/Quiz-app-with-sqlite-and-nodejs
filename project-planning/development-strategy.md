@@ -50,9 +50,9 @@ __As a user I want to see the initial page when I load the site__
 
 ## 2. Route-getAll method
 
-__As a user, ...__
+__As a user, I can see all track Api's__
 
-> Assign to **...**
+> Assign to **Oguz**
 
 ### REPO
 
@@ -60,15 +60,16 @@ __As a user, ...__
 
 ### Tasks
 
-- 
+- Completed get-all method for route
+- Customized the table to make it easier to work on
 
 ---
 
 ## 3. Route-getOne method
 
-__As a user, ...__
+__As a user, I can see a specific track using the track id of the table __
 
-> Assign to **...**
+> Assign to **Oguz**
 
 ### REPO
 
@@ -76,7 +77,7 @@ __As a user, ...__
 
 ### Tasks
 
-- 
+- Competed get-one method for route
 
 ---
 
