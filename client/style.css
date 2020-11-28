@@ -111,6 +111,13 @@ h1 {
   display: none;
 }
 
+.right {
+ background: #2eb82e;
+}
+
+.wrong {
+  background: red;
+ }
 /* responsive design */
 
 @media only screen and (max-width: 1350px) {
