@@ -74,6 +74,12 @@ export const displayHandler = (event) => {
 
         document.getElementById('quest-num').innerHTML ++;
 
+        document.getElementById('answer-buttons').classList.remove('disable')
+        answers.map((button)=>{
+            button.classList.remove('right', 'wrong')
+            })
+        document.getElementById('result-text').classList.add('hide')
+
         if (document.getElementById('quest-num').innerHTML == 11) {
             document.getElementById('question-container').classList.add('hide');
             document.getElementById('next-btn').classList.add('hide');
@@ -81,6 +87,7 @@ export const displayHandler = (event) => {
             document.getElementById('result').classList.remove('hide');
             let score = document.getElementById('score-answers').innerHTML;
             document.getElementById('score-result').innerHTML = score;
+            document.getElementById('score-answers').innerHTML = 0;
         }
 
         display().then(data => { 
