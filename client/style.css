@@ -118,6 +118,11 @@ h1 {
 .wrong {
   background: red;
  }
+
+ .disable{
+  cursor: not-allowed;
+  pointer-events: none;
+}
 /* responsive design */
 
 @media only screen and (max-width: 1350px) {
